@@ -9,7 +9,7 @@ const postData = async (url, data) => {
     return await res.json();
 };
 
-async function getResources (url) => {
+async function getResources (url)  {
     const res = await fetch(url);
     if (!res.ok) {
         throw new Error(`Could not fetch ${url}, status: ${res.status}`);

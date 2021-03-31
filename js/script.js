@@ -1,5 +1,3 @@
-"use strict"
-
 import tabs from './modules/tabs';
 import modal from './modules/modal';
 import calc from './modules/calc';
@@ -14,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     tabs ('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
     modal('[data-modal]', '.modal', modalTimer);
+    timer('.timer', '2021-04-20');
     calc();
     cards();
     forms('form', modalTimer);
@@ -27,7 +26,4 @@ window.addEventListener('DOMContentLoaded', () => {
         wrapper: '.offer__slider-wrapper',
         inner: '.offer__slider-inner'
     });
-    timer('.timer', 2020-04-20);
-
-
 });
